@@ -10,7 +10,7 @@ The portfolio is fully responsive and deployed using **GitHub Pages**.
 ---
 
 ## 🚀 Live Website  
-🔗 **Portfolio Link:** https://github.com/Balasubramani2004  
+🔗 **Portfolio Link:** https://Balasubramani2004.github.io 
 
 
 ---
