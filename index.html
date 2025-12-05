@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Balasubramani M | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid #1f2937;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Layout */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    h1, h2, h3 {
+      color: #f9fafb;
+      margin-bottom: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .subtext {
+      color: #9ca3af;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 2;
+      min-width: 260px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-role {
+      color: #38bdf8;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-buttons {
+      margin-top: 1.4rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Profile Image */
+    .hero-image {
+      flex: 1;
+      min-width: 220px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 999px;
+      border: 3px solid #1f2937;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid #38bdf8;
+      font-size: 0.95rem;
+      cursor: pointer;
+      background: transparent;
+      color: #e5e7eb;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+      border-color: #38bdf8;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.25);
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 0.9rem;
+      padding: 1.2rem 1.3rem;
+      border: 1px solid #1f2937;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      border: 1px solid #4b5563;
+      color: #9ca3af;
+      margin-right: 0.4rem;
+      margin-top: 0.3rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.8rem;
+      padding: 1.5rem 0 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">BM</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span style="color:#38bdf8;">Balasubramani M</span></h1>
+        <p class="hero-role">Pre-Final Year CSE Student | Tech Problem Solver</p>
+
+        <p class="subtext">
+          I'm a Computer Science Engineering student passionate about solving real-world problems
+          using technology, brainstorming innovative ideas, and continuously learning new
+          advancements in AI, ML, DL, and full-stack development.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="hero-image">
+        <img src="C:\lab 5th sem\profile.png" alt="Balasubramani M" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p class="subtext">
+        I am a pre-final year CSE student who loves working on innovative and impactful tech
+        solutions. I enjoy prototyping ideas, building projects, and exploring AI/ML technologies.
+      </p>
+
+      <p class="subtext" style="margin-top:0.7rem;">
+        I have participated in various hackathons, ideathons, and tech summits — gaining strong
+        experience in teamwork, rapid prototyping, and presenting solutions.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <span class="tag">C</span>
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+        </div>
+
+        <div class="card">
+          <h3>Web Development</h3>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">SQL</span>
+        </div>
+
+        <div class="card">
+          <h3>Interests</h3>
+          <span class="tag">AI</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Hackathons</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>Sign Language Translator</h3>
+          <p class="subtext">
+            A Python + ML-based system to translate hand gestures to text/speech. Received special
+            recognition at Cambridge Institute of Technology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Online Document Locker</h3>
+          <p class="subtext">
+            A secure MERN-stack platform for uploading and managing personal documents with login
+            authentication.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hospital Management System</h3>
+          <p class="subtext">
+            A role-based portal for managing patients, doctors, appointments and records.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>MedAI</h3>
+          <p class="subtext">
+            An AI-powered health assistant concept focused on symptom checking and insights.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+      <h2>Achievements</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Runner Up – Hackathon</h3>
+          <p class="subtext">
+            Secured Runner Up position at Nagarjuna College of Engineering.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Special Recognition – Project Expo</h3>
+          <p class="subtext">
+            Recognized for the Sign Language Translator at Cambridge Institute of Technology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hackathon Participation</h3>
+          <p class="subtext">
+            Participated in multiple hackathons, ideathons, and tech summits.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> balasubramanim63@gmail.com</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Balasubramani2004">github.com/Balasubramani2004</a></p>
+          <p><strong>Location:</strong> India</p>
+        </div>
+
+        <p class="subtext">
+          I’m open to internships, collaborations, and tech discussions. Feel free to reach out!
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Balasubramani M. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
